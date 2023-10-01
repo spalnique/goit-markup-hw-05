@@ -756,19 +756,6 @@ input {
     letter-spacing: 0.02em;
 }
 
-.modal textarea {
-    resize: none;
-    height: 120px;
-    padding: 8px 16px;
-}
-.modal .modal-label span {
-    text-decoration: underline;
-}
-
-.modal-checkbox:checked {
-    color: #404BBF;
-}
-
 .modal .input-field::before {
     position: absolute;
     top: 50%;
@@ -778,6 +765,20 @@ input {
     height: 12px;
     width: 12px;
     color: #2E2F42;
+}
+
+.modal textarea {
+    resize: none;
+    height: 120px;
+    padding: 8px 16px;
+}
+
+.modal .modal-label span {
+    text-decoration: underline;
+}
+
+.modal input [type="checkbox"]:checked {
+    color: #404BBF;
 }
 
 .modal .form-container {
