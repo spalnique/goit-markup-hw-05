@@ -788,24 +788,73 @@ input {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-container:focus-within .input-icon {
+.input-field:focus-within .input-icon {
     fill: #4d5ae5;
 }
 
-.modal textarea {
-    resize: none;
+.comment-container {
+    margin-bottom: 16px;
+}
+
+.comment-container .comment-field {
+    width: 100%;
     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
     padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition:
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .modal-label span {
-    text-decoration: underline;
-    color: #4D5AE5;
+textarea:focus-within .comment-field {
+    border-color: #4D5AE5;
 }
 
-.modal input [type="checkbox"]:checked {
-    color: #404BBF;
+.privacy-container {
+    margin-bottom: 24px;
 }
+
+.privacy-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.privacy-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.checkbox-icon {}
+
+input [type="checkbox"]:checked span {
+    background-color: #404BBF;
+    border: none;
+    fill: #f4f4fd
+}
+
+.privacy-link {
+    color:#4d5ae5;
+}
+
 
 .modal .form-container {
     display: flex;
@@ -819,7 +868,7 @@ input {
     display: block;
     background-color: #4D5AE5;
     color: #ffffff;
-    font-family: inherit;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -827,12 +876,18 @@ input {
     cursor: pointer;
     margin: 0 auto 24px;
     padding: 16px 32px;
-    border: 0;
+    border: none;
     border-radius: 4px;
     min-width: 169px;
+    height: 56px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     /* transition: transform 200ms ease-in-out, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-submit-button:hover,
+.modal-submit-button:focus {
+    background-color: #404BBF;
 }
 
 .modal-is-hidden {
