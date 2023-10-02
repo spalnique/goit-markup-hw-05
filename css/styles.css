@@ -593,7 +593,7 @@ input {
     fill: #F4F4FD;
 }
 
-.footer-subscription-block .form-container {
+.footer-subscription-block .subscription-container {
     display: flex;
     gap: 24px;
     flex-shrink: 0;
@@ -612,7 +612,7 @@ input {
     margin-bottom: 16px;
 }
 
-.footer-subscription-block .input-field {
+.footer-subscription-block .email-field {
     width: 264px;
     display: block;
     padding: 8px 0 8px 16px;
@@ -626,7 +626,7 @@ input {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.footer-subscription-block .input-field::placeholder {
+.footer-subscription-block .email-field::placeholder {
     content: "";
     color: #fff;
     font-size: 12px;
@@ -723,14 +723,14 @@ input {
     border: none;
 }
 
-.modal-close-button .icon-container {
+.modal-close-button .close-icon {
     fill: #2E2F42;
     transition:
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover>.icon-container,
-.modal-close-button:focus>.icon-container {
+.modal-close-button:hover .close-icon,
+.modal-close-button:focus .close-icon {
     fill: #ffffff;
 }
 
