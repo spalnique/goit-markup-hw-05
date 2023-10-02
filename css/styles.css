@@ -774,7 +774,8 @@ input {
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-container .input-field:focus-within {
+.input-container .input-field:focus,
+.input-container .input-field:focus .input-field:focus-within {
     border-color: #4D5AE5;
 }
 
@@ -788,7 +789,8 @@ input {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-field:focus-within+.input-icon {
+.input-container .input-field:focus .input-icon,
+.input-container .input-field:focus-within .input-icon {
     fill: #4d5ae5;
 }
 
