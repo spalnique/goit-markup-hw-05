@@ -708,7 +708,6 @@ input {
     right: 24px;
     top: 24px;
     background-color: #E7E9FC;
-    color: white;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -719,8 +718,7 @@ input {
 }
 
 .modal-close-button:hover,
-.modal-close-button:focus,
-.modal-close-button:active {
+.modal-close-button:focus {
     background-color: #404bbf;
     border: none;
 }
@@ -732,8 +730,7 @@ input {
 }
 
 .modal-close-button:hover .icon-container,
-.modal-close-button:focus .icon-container,
-.modal-close-button:active .icon-container {
+.modal-close-button:focus .icon-container {
     fill: #ffffff;
 }
 
