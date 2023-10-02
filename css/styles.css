@@ -718,7 +718,7 @@ input {
 }
 
 .modal-close-button:hover,
-.modal-close-button:focus {
+.modal-close-button:focus .modal-close-button:active {
     background-color: #404bbf;
     border: none;
 }
