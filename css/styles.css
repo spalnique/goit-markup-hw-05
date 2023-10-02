@@ -856,21 +856,12 @@ input[type="checkbox"]+label>span {
 input[type="checkbox"]:checked+label>span {
     background-color: #404BBF;
     border: none;
-    fill: #f4f4fd
+    fill: #f4f4fd;
 }
 
 .privacy-link {
     color: #4d5ae5;
     text-decoration: underline;
-}
-
-
-.modal .form-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: flex-start;
-    margin-bottom: 24px;
 }
 
 .modal-submit-button {
@@ -899,7 +890,7 @@ input[type="checkbox"]:checked+label>span {
     background-color: #404BBF;
 }
 
-.modal-is-hidden {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
