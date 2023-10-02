@@ -729,8 +729,8 @@ input {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-button:hover .icon-container,
-.modal-close-button:focus .icon-container {
+.modal-close-button:hover>.icon-container,
+.modal-close-button:focus>.icon-container {
     fill: #ffffff;
 }
 
@@ -853,8 +853,6 @@ input[type="checkbox"]+label>span {
     fill: transparent;
 }
 
-.checkbox-icon {}
-
 input[type="checkbox"]:checked+label>span {
     background-color: #404BBF;
     border: none;
@@ -863,6 +861,7 @@ input[type="checkbox"]:checked+label>span {
 
 .privacy-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 
