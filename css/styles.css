@@ -672,18 +672,28 @@ input {
     width: 100%;
     height: 100vh;
     background: rgba(46, 47, 66, 0.40);
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 2;
 }
 
 .modal {
+    position: absolute;
     display: block;
     width: 408px;
+    min-height: 584px;
     border-radius: 4px;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FCFCFC;
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition:
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-container {
@@ -696,23 +706,29 @@ input {
 }
 
 .modal-close-button {
-    display: flex;
-    padding: 8px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
     right: 24px;
     top: 24px;
     background-color: #E7E9FC;
     color: white;
     width: 24px;
     height: 24px;
-    border: 0;
     border-radius: 50%;
     cursor: pointer;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
 .modal-close-button:focus {
     background-color: #404BBF;
+    border: none;
 }
 
 .modal-close-button:hover .icon-container,
@@ -748,23 +764,12 @@ input {
 
 .modal .input-field {
     position: relative;
-    display: inline-block;
+    display: flex;
     padding: 10px 34px;
     color: #2E2F42;
     font-size: 14px;
     line-height: 1.13;
     letter-spacing: 0.02em;
-}
-
-.modal .input-field::before {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    content: url("./goit-markup-hw-05/images/modal-name-icon.svg");
-    height: 12px;
-    width: 12px;
-    color: #2E2F42;
 }
 
 .modal textarea {
@@ -775,6 +780,7 @@ input {
 
 .modal .modal-label span {
     text-decoration: underline;
+    color: #4D5AE5;
 }
 
 .modal input [type="checkbox"]:checked {
