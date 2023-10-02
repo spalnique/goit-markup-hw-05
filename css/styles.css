@@ -593,74 +593,70 @@ input {
     fill: #F4F4FD;
 }
 
-.footer-subscription-block .subscription-container {
-    display: flex;
-    gap: 24px;
-    flex-shrink: 0;
-    align-content: flex-end;
-}
-
 .footer-subscription-block {}
 
-.footer-subscription-block .subscribe-label {
-    display: inline-block;
-    color: #fff;
-    font-size: 16px;
+
+.subscription-title {
+    margin-bottom: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
+    color: #ffffff;
 }
 
-.footer-subscription-block .email-field {
+.subscription-form {
+    display: flex;
+    gap: 24px;
+}
+
+.subscription-label {}
+
+.subscription-input {
     width: 264px;
-    display: block;
-    padding: 8px 0 8px 16px;
-    color: #fff;
+    height: 40px;
+    padding-left: 16px;
+    color: #ffffff;
     font-size: 12px;
-    line-height: 2.0;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     background-color: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-subscription-block .email-field::placeholder {
-    content: "";
-    color: #fff;
-    font-size: 12px;
-    line-height: 2.0;
-    letter-spacing: 0.04em;
+.subscription-input::placeholder {
+    color: #ffffff;
 }
 
-.footer-subscription-block .subscription-button {
+.subscription-button {
     display: flex;
-    gap: 16px;
+    justify-content: center;
     align-items: center;
+    min-width: 165px;
+    height: 40px;
     background-color: #4D5AE5;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    padding: 8px 24px;
-    border: 0;
+    border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    /* transition: transform 200ms ease-in-out, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscription-block .subscription-button:hover,
-.footer-subscription-block .subscription-button:focus {
+.subscription-button:hover,
+.subscription-button:focus {
     background-color: #404BBF;
-    /* transform: scale(1.025); */
 }
 
-.footer-subscription-block .icon-container {
+.subscription-button .icon-container {
     fill: #F4F4FD;
+    margin-left: 16px;
 }
 
 /* ====== MODAL ====== */
