@@ -737,12 +737,13 @@ input {
 .modal-close-button:hover .icon-container,
 .modal-close-button:focus .icon-container,
 .modal-close-button:active .icon-container {
-    fill: #fff;
+    fill: #ffffff;
 }
 
 .modal-title {
     color: #2E2F42;
     text-align: center;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
