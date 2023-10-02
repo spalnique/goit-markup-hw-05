@@ -796,7 +796,7 @@ input {
     margin-bottom: 16px;
 }
 
-.comment-container .form-item-label {
+.comment-label {
     display: block;
     color: #8E8F99;
     font-size: 12px;
@@ -806,7 +806,7 @@ input {
     margin-bottom: 4px;
 }
 
-.comment-container .comment-field {
+.comment-field {
     width: 100%;
     height: 120px;
     font-size: 12px;
