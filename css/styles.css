@@ -170,7 +170,6 @@ input {
     bottom: -1px;
     left: 0;
 } */
-
 .address-block {
     font-style: normal;
     padding: 24px 0px;
@@ -210,7 +209,6 @@ input {
     max-width: 1440px;
     padding: 188px 0;
     margin: 72px auto 0;
-
 }
 
 .banner-title {
@@ -242,7 +240,6 @@ input {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     /* transition: transform 200ms ease-in-out, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .banner-button:hover,
@@ -315,10 +312,7 @@ input {
     letter-spacing: 0.02em;
 }
 
-
 /* ==== STAFF ==== */
-
-
 .staff {
     background-color: #F4F4FD;
 }
@@ -482,7 +476,6 @@ input {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-
 }
 
 .portfolio-item-title {
@@ -595,7 +588,6 @@ input {
 
 .footer-subscription-block {}
 
-
 .subscription-title {
     margin-bottom: 16px;
     font-weight: 500;
@@ -659,7 +651,9 @@ input {
     margin-left: 16px;
 }
 
+
 /* ====== MODAL ====== */
+
 
 .backdrop {
     position: fixed;
@@ -841,7 +835,7 @@ input {
     color: #8E8F99;
 }
 
-input[type="checkbox"]+label>span {
+input[type="checkbox"] + label > span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -856,7 +850,7 @@ input[type="checkbox"]+label>span {
     fill: transparent;
 }
 
-input[type="checkbox"]:checked+label>span {
+input[type="checkbox"]:checked + label > span {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
